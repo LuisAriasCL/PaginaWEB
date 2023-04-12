@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>StarFilms</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,13 +12,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
 
+  
+</head>
+<style>
+
+
+</style>
 <body>
 
   <nav class="navbar navbar-expand-sm bg-black navbar-dark">
     <div class="container-fluid">
-      <img src="IMAGENES/starfilms__1_-removebg-preview.png" width="250px" height="200px" />
+      <a href="Pagina.html"><img src="IMAGENES/starfilms__1_-removebg-preview.png"  width="250px" height="200px"  />   </a>
       <!-- h1 class="animate__animated animate__backInLeft">An animated element</h1>-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -26,22 +31,28 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-bg-dark " href=".html">CARTELERA</a>
+            <a class="nav-link text-bg-dark " href="#cartelera">CARTELERA</a>
           </li>
+          
+          
           <li class="nav-item">
-            <a class="nav-link text-bg-dark" href=".html">GENEROS</a>
-          </li>
+            <a class="nav-link text-bg-dark" href="compraBoletos.html">COMPRA TU ENTRADA</a>
+          </li>s
+
           <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="">COMPRA TU ENTRADA</a>
+            <a class="nav-link text-bg-dark " href="Login.html">INICIAR SESION</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+  
+
   <div class="container-fluid">
 
-    <div class="bg-warning p-2"></div>
+    <div class="bg-primary p-2"></div>
 
 
     <div class="container d-flex justify-content-center mt-2">
@@ -55,11 +66,11 @@
           <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-        <!-- The slideshow/carousel -->
+      
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="IMAGENES/Mi proyecto.jpg" class="img-fluid" alt="01" class="d-block h-80">
+            <img src="IMAGENES/Mi proyecto.jpg" class="img-fluid" alt="01" class="d-block h-80" >
           </div>
           <div class="carousel-item">
             <img src="IMAGENES/Mi proyecto (1).jpg" class="img-fluid" alt="02" class="d-block h-80">
@@ -69,7 +80,7 @@
           </div>
         </div>
 
-        <!-- Left and right controls/icons -->
+        
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
@@ -86,7 +97,7 @@
 
     <div class="container-fluid">
 
-      <div class="bg-warning p-2"></div>
+      <div class="bg-primary p-2"></div>
 
 
       <body>
@@ -102,7 +113,7 @@
             <div class="row">
               <div class="col-md-4 mb-4">
                 <div class="card">
-                  <img src="IMAGENES/caartelera 1.jpg" class="card-img-top" alt="...">
+                  <img src="IMAGENES/caartelera 1.jpg" class="card-img-top" alt="..." >
                   <div class="card-body">
                     <h5 class="card-title">HALLOWEEN</h5>
                     <p class="card-text">El pequeño Michael Myers asesina a su hermana en la noche de Halloween de 1963,
@@ -111,7 +122,7 @@
                       horripilantes asesinatos mientras uno de los médicos que lo trataba en el hospital le sigue la
                       pista.
                     </p>
-                    <a href="#" class="btn btn-primary">Comprar boletos</a>
+                    <a href="Halloween.html" class="btn btn-primary">VER MAS</a>
                   </div>
                 </div>
               </div>
@@ -126,7 +137,7 @@
                       personaje sin autoestima ni ganas de vivir que en un intento para cambiar su vida acepta trabajar
                       como chófer para una banda de criminales. Un arma de doble corte que hará que desaparezcan los
                       principales problemas de su vida pero que surjan de todavía peores.</p>
-                    <a href="#" class="btn btn-primary">Comprar boletos</a>
+                    <a href="Thedriver.html" class="btn btn-primary">VER MAS</a>
                   </div>
                 </div>
               </div>
@@ -141,9 +152,9 @@
                       del pez al jefe de la policía, un pescador y a un científico quienes se enfrentarán a un animal
                       muy inteligente y violento.
                     </p>
-                    
 
-                    <a href="#" class="btn btn-primary">Comprar boletos</a>
+
+                    <a href="Jaws.html" class="btn btn-primary">VER MAS</a>
                   </div>
                 </div>
               </div>
@@ -151,59 +162,66 @@
           </div>
 
 
-        </section>
-        <!-- Venta de boletos -->
-        <section id="venta-boletos" class="mt-5">
-          <div class="container">
-            <p class="text-center mx-auto">Venta de Boletos</p>
-            <div class="row">
-              <div class="col-md-15 mb-4">
-                <form>
-                  <div class="mb-3">
-                    <label for="nombre-pelicula" class="form-label">Nombre de la película</label>
-                    <input type="text" class="form-control" id="nombre-pelicula">
-                  </div>
-                  <div class="mb-3">
-                    <label for="fecha" class="form-label">Fecha</label>
-                    <input type="date" class="form-control" id="fecha">
-                  </div>
-                  <div class="mb-3">
-                    <label for="horario" class="form-label">Horario</label>
-                    <select class="form-select" aria-label="Seleccione el horario">
-                      <option selected>Seleccione el horario</option>
-                      <option value="1">10:00 AM</option>
-                      <option value="2">12:00 PM</option>
-                      <option value="3">2:00 PM</option>
-                      <option value="4">4:00 PM</option>
-                      <option value="5">6:00 PM</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="cantidad-boletos" class="form-label">Cantidad de boletos</label>
-                    <input type="number" class="form-control" id="cantidad-boletos" min="1" max="10">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Comprar boletos</button>
-                </form>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Resumen de compra</h5>
-                    <p class="card-text">No se ha seleccionado ninguna película.</p>
-                  </div>
-                </div>
-              </div>
+
+
+          <div class="marquee marquee--borders" style="--duration: 100s">
+          </div>
+
+          <div class="marquee">
+            <div class="marquee__group">
+              <img
+                src='https://images.unsplash.com/photo-1523464862212-d6631d073194?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1524117074681-31bd4de22ad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1613594924101-c84cb521ee40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1603232644140-bb47da511b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
+            </div>
+
+            <div aria-hidden="true" class="marquee__group">
+              <img
+                src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3MzQ&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1583511666445-775f1f2116f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3MzQ&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1586917383423-c25e88ac05ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3NzU&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1560743173-567a3b5658b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3NzU&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
+              <img
+                src='https://images.unsplash.com/photo-1603232644140-bb47da511b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400'
+                alt=''>
             </div>
           </div>
 
+          <div class="marquee marquee--borders" style="--duration: 100s">
+          </div>
+
+
+
+
+
+
+
         </section>
-        <!-- Footer -->
+      
         <footer class="mt-5 py-3 bg-dark text-white">
           <div class="container text-center">
             <p>&copy; 2023 - STARFILMS</p>
           </div>
         </footer>
-        <!-- Bootstrap 5 JS Bundle with Popper -->
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       </body>
 
